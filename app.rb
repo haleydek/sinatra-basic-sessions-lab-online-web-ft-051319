@@ -17,7 +17,7 @@ class App < Sinatra::Base
   end
   
   get '/checkout' do
-    @session["item"]
+    @session
     erb :checkout
   end
 end
